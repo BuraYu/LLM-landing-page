@@ -15,7 +15,7 @@ export default function Hero() {
             Hic excepturi quod impedit saepe.
           </p>
           <div className="header--email">
-            <label for="email">Enter you email adress</label>
+            <label for="email"></label>
             <input
               type="email"
               id="email"

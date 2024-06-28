@@ -1,0 +1,21 @@
+.header {
+  max-width: 1400px;
+}
+
+.header--container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.header--title {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+}
+
+img {
+  width: 50%;
+}
