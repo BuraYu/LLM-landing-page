@@ -28,7 +28,7 @@ export default function Steps() {
       </div>
       <div className="steps-step--container">
         <div className="steps-step-information">
-          <h3 className="steps-step--header">Step 1</h3>
+          <h3 className="steps-step--header">Step 2</h3>
           <p className="steps-step--description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
             ad enim quia assumenda delectus alias doloremque. Placeat, ab,
@@ -50,7 +50,7 @@ export default function Steps() {
       </div>
       <div className="steps-step--container">
         <div className="steps-step-information">
-          <h3 className="steps-step--header">Step 1</h3>
+          <h3 className="steps-step--header">Step 3</h3>
           <p className="steps-step--description">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
             ad enim quia assumenda delectus alias doloremque. Placeat, ab,
