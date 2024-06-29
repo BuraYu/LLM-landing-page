@@ -1,24 +1,30 @@
 .carousel {
   display: flex;
   align-items: center;
-  justify-content: center;
-  margin: 20px;
+  justify-content: space-between;
+  margin: 20px auto;
   border: 2px solid #ccc;
   border-radius: 8px;
-  padding: 10px;
-  max-width: 1400px;
-  margin: 0 auto;
-  background-color: #f9f9f9;
+  padding: 20px;
+  max-width: 800px;
+  height: 350px;
+  background: linear-gradient(135deg, #f0af6e, #ffffff);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .carousel-button {
   background-color: #007bff;
   color: white;
   border: none;
-  padding: 10px;
+  padding: 10px 20px;
   cursor: pointer;
-  font-size: 1.5rem;
+  font-size: 2rem;
   border-radius: 4px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
 }
 
 .carousel-button:hover {
@@ -26,8 +32,47 @@
 }
 
 .carousel-content {
-  margin: 0 20px;
-  font-size: 1.2rem;
-  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
   flex-grow: 1;
+  margin: 0 20px;
+}
+
+.carousel-description {
+  width: 60%;
+  font-size: 1.2rem;
+  padding-right: 20px;
+  color: #333;
+  font-family: "Arial", sans-serif;
+}
+
+.carousel-details {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.carousel-details h2 {
+  margin: 0;
+  font-size: 1.8rem;
+  color: #007bff;
+  font-family: "Georgia", serif;
+}
+
+.carousel-details h3 {
+  margin: 10px 0 0 0;
+  font-size: 1.5rem;
+  color: #333;
+  font-family: "Arial", sans-serif;
+}
+
+.carousel-details p {
+  margin: 5px 0 0 0;
+  font-size: 1rem;
+  color: #666;
+  font-family: "Arial", sans-serif;
 }

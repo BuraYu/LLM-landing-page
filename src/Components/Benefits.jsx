@@ -1,19 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Benefits.css";
-import { useState } from "react";
+import benefits from "../data";
 
-export default function Benefits() {
-  const benefits = [
-    "Cost Efficiency: Long-term savings by avoiding subscription fees and recurring costs.",
-    "Control and Customization: Full control over software configurations, updates, and integrations.",
-    "Data Privacy and Security: Enhanced security and privacy by keeping data within your own servers.",
-    "Performance and Availability: Dedicated resources ensure consistent performance and low latency.",
-    "Scalability: Flexible resource scaling based on actual usage patterns and demands.",
-    "No Vendor Lock-in: Independence from a single vendor’s ecosystem.",
-    "Advanced Use Cases: Capability to deploy models at the edge or in specific geographic locations.",
-    "Learning and Innovation: Develop in-house expertise and foster innovation.",
-  ];
-
+const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
 
   const nextBenefit = () => {
@@ -25,15 +14,34 @@ export default function Benefits() {
       (prevIndex) => (prevIndex - 1 + benefits.length) % benefits.length
     );
   };
+
   return (
     <div className="carousel">
       <button className="carousel-button" onClick={prevBenefit}>
         ←
       </button>
-      <div className="carousel-content">{benefits[currentIndex]}</div>
+      <div className="carousel-content">
+        <div className="carousel-details">
+          <h2>{benefits[currentIndex].heading}</h2>
+          {benefits[currentIndex].details.map((detail, index) => (
+            <div key={index}>
+              <h3>{detail.subheading}</h3>
+            </div>
+          ))}
+        </div>
+        <div className="carousel-description">
+          {benefits[currentIndex].details.map((detail, index) => (
+            <div key={index}>
+              <p>{detail.description}</p>
+            </div>
+          ))}
+        </div>
+      </div>
       <button className="carousel-button" onClick={nextBenefit}>
         →
       </button>
     </div>
   );
-}
+};
+
+export default Carousel;
