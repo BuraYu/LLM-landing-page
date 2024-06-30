@@ -19,6 +19,10 @@ const Carousel = () => {
     );
   };
 
+  const goToBenefit = (index) => {
+    setCurrentIndex(index);
+  };
+
   const variants = {
     enter: { opacity: 0 },
     center: { opacity: 1, transition: { duration: 1 } },
@@ -63,6 +67,7 @@ const Carousel = () => {
           <span
             key={index}
             className={`dot ${index === currentIndex ? "active" : ""}`}
+            onClick={() => goToBenefit(index)}
           ></span>
         ))}
       </div>

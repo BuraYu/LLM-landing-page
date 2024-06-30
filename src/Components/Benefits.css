@@ -95,6 +95,10 @@
   border-radius: 50%;
 }
 
+.dot:hover {
+  background-color: #ff006f;
+}
+
 .dot.active {
   background-color: #007bff;
 }
