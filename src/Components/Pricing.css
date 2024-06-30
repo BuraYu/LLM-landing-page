@@ -2,15 +2,25 @@
   display: flex;
   width: 100%;
   justify-content: space-evenly;
+  gap: 20px;
 }
 
-.pricing--basic {
-  border: 1px solid green;
+.pricing--box {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 10px;
+  width: 33.3%;
 }
 
 .pricing--premium {
-  border: 1px solid pink;
+  background-color: black;
+  color: white;
+  box-shadow: 2px 1px 47px 1px rgba(255, 0, 0, 0.25);
+  -webkit-box-shadow: 2px 1px 47px 1px rgba(255, 0, 0, 0.25);
+  -moz-box-shadow: 2px 1px 47px 1px rgba(255, 0, 0, 0.25);
 }
-.pricing--enterprise {
-  border: 1px solid rgb(0, 225, 255);
+
+.pricing--package-name {
+  font-size: 20px;
+  font-weight: 800;
 }
