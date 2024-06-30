@@ -11,6 +11,7 @@
   height: 350px;
   background: linear-gradient(135deg, #ebd1b8, #ffffff);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
 }
 
 .carousel-button {
@@ -76,4 +77,24 @@
   font-size: 1rem;
   color: #666;
   font-family: "Arial", sans-serif;
+}
+
+.carousel-dots {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 8px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+.dot.active {
+  background-color: #007bff;
 }

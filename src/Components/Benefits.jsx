@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Benefits.css";
 import benefits from "../data";
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -58,6 +58,14 @@ const Carousel = () => {
       <button className="carousel-button" onClick={nextBenefit}>
         →
       </button>
+      <div className="carousel-dots">
+        {benefits.map((_, index) => (
+          <span
+            key={index}
+            className={`dot ${index === currentIndex ? "active" : ""}`}
+          ></span>
+        ))}
+      </div>
     </div>
   );
 };
