@@ -7,8 +7,9 @@
   border-radius: 8px;
   padding: 20px;
   max-width: 800px;
+  min-height: 500px;
   height: 350px;
-  background: linear-gradient(135deg, #f0af6e, #ffffff);
+  background: linear-gradient(135deg, #ebd1b8, #ffffff);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
