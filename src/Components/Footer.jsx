@@ -30,7 +30,7 @@ export default function Footer() {
     <section>
       <div className="footer--container">
         <div className="footer--socials">
-          <h3>123</h3>
+          <h3>LLM Comp</h3>
           <p>
             Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
             sint. Velit officia consequat duis enim velit mollit.
@@ -81,9 +81,11 @@ export default function Footer() {
           {/* check email validility */}
           <a href="#">Subscribe</a>
         </div>
-        <hr />
-        <p>© Copyright 2024, All Rights Reserved by Burak Yüksel</p>
       </div>
+      <hr />
+      <p className="footer--copyright">
+        © Copyright 2024, All Rights Reserved by Burak Yüksel
+      </p>
     </section>
   );
 }
