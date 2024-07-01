@@ -3,15 +3,15 @@ import "./Footer.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faFacebookF,
-  faTwitter,
+  faXTwitter,
   faInstagram,
   faGithub,
 } from "@fortawesome/free-brands-svg-icons";
 
 export default function Footer() {
-  const SocialItem = ({ icon, label }) => (
+  const SocialItem = ({ icon, label, ariaLabel }) => (
     <li key={label}>
-      <a href="#">
+      <a href="#" aria-label={ariaLabel}>
         {" "}
         <FontAwesomeIcon icon={icon} />
       </a>
@@ -21,7 +21,9 @@ export default function Footer() {
   const FooterLinks = ({ label, linkName, url }) => {
     return (
       <li key={label}>
-        <a href={url}>{linkName}</a>
+        <a href={url} aria-label={linkName}>
+          {linkName}
+        </a>
       </li>
     );
   };
@@ -36,10 +38,22 @@ export default function Footer() {
             sint. Velit officia consequat duis enim velit mollit.
           </p>
           <ul>
-            <SocialItem icon={faTwitter} label="Twitter" />
-            <SocialItem icon={faFacebookF} label="Facebook" />
-            <SocialItem icon={faInstagram} label="Instagram" />
-            <SocialItem icon={faGithub} label="Github" />
+            <SocialItem icon={faXTwitter} label="X" ariaLabel="X logo" />
+            <SocialItem
+              icon={faFacebookF}
+              label="Facebook"
+              ariaLabel="Facebook logo"
+            />
+            <SocialItem
+              icon={faInstagram}
+              label="Instagram"
+              ariaLabel="Instagram logo"
+            />
+            <SocialItem
+              icon={faGithub}
+              label="Github"
+              ariaLabel="GitHub logo"
+            />
           </ul>
         </div>
         <div className="footer--company-info">
@@ -76,10 +90,16 @@ export default function Footer() {
           <h4 className="footer--subheading">Subscribe to newsletter</h4>
           <form action="#" method="POST">
             <label htmlFor=""></label>
-            <input type="text" placeholder="Enter email adress" />
+            <input
+              type="text"
+              placeholder="Enter email adress"
+              aria-label="Enter your email address"
+            />
           </form>
           {/* check email validility */}
-          <a href="#">Subscribe</a>
+          <a href="#" aria-label="Subscribe to newsletter">
+            Subscribe
+          </a>
         </div>
       </div>
       <hr />
