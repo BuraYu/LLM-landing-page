@@ -4,9 +4,9 @@ import headerlogo from "../images/llm-image.png";
 
 export default function Hero() {
   return (
-    <header className="header">
-      <div className="header--container">
-        <div className="header--title">
+    <header className="hero-header">
+      <div className="hero--container">
+        <div className="hero--title">
           <h1>LLM Hosting</h1>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
@@ -14,18 +14,18 @@ export default function Hero() {
             eos corporis nisi nihil tempore asperiores voluptates aliquid omnis.
             Hic excepturi quod impedit saepe.
           </p>
-          <div className="header--email">
-            <label for="email"></label>
+          <div className="hero--email">
+            <label for="email" className="sr-only"></label>
             <input
               type="email"
               id="email"
               required
               placeholder="JohnDoe@gmail.com"
             ></input>
-            <button>Get startd</button>
+            <button>Get started</button>
           </div>
         </div>
-        <img src={headerlogo} alt="" srcset="" />
+        <img src={headerlogo} alt="LLM Hosting logo" className="hero-logo" />
       </div>
     </header>
   );
