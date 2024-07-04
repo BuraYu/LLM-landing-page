@@ -1,6 +1,6 @@
 import React from "react";
 import "./Hero.css";
-import headerlogo from "../images/llm-image.png";
+import headerlogo from "../images/hero-img.png";
 
 export default function Hero() {
   return (
@@ -25,7 +25,7 @@ export default function Hero() {
             <button>Get started</button>
           </div>
         </div>
-        <img src={headerlogo} alt="LLM Hosting logo" className="hero--logo" />
+        {/* <img src={headerlogo} alt="LLM Hosting logo" className="hero--logo" /> */}
       </div>
     </header>
   );
