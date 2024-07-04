@@ -5,6 +5,7 @@ import headerlogo from "../images/hero-img.png";
 export default function Hero() {
   return (
     <header className="hero-header">
+      
       <div className="hero--container">
         <div className="hero--title">
           <h1>LLM Hosting</h1>
