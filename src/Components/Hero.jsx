@@ -25,7 +25,7 @@ export default function Hero() {
             <button>Get started</button>
           </div>
         </div>
-        <img src={headerlogo} alt="LLM Hosting logo" className="hero-logo" />
+        <img src={headerlogo} alt="LLM Hosting logo" className="hero--logo" />
       </div>
     </header>
   );
