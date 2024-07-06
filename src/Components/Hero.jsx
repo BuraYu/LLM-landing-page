@@ -5,8 +5,23 @@ import headerlogo from "../images/hero-img.png";
 export default function Hero() {
   return (
     <header className="hero-header">
-      
       <div className="hero--container">
+        <nav>
+          <ul>
+            <li>
+              <a href="#">How it works</a>
+            </li>
+            <li>
+              <a href="#">Benefits</a>
+            </li>
+            <li>
+              <a href="#">Pricing</a>
+            </li>
+            <li>
+              <a href="#">Logo</a>
+            </li>
+          </ul>
+        </nav>
         <div className="hero--title">
           <h1>LLM Hosting</h1>
           <p>
@@ -16,13 +31,13 @@ export default function Hero() {
             Hic excepturi quod impedit saepe.
           </p>
           <div className="hero--email">
-            <label for="email" className="sr-only"></label>
+            <label htmlFor="email" className="sr-only"></label>
             <input
               type="email"
               id="email"
               required
               placeholder="JohnDoe@gmail.com"
-            ></input>
+            />
             <button>Get started</button>
           </div>
         </div>
