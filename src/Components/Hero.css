@@ -50,6 +50,16 @@ nav {
   z-index: 1000;
   width: auto;
   padding: 10px 0;
+  transition: border-bottom 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+
+  background-color: rgba(197, 197, 197, 0);
+  border-bottom: 2px solid transparent;
+}
+
+nav.scrolled {
+  border-bottom: 1px solid #757575;
+  background-color: rgba(197, 197, 197, 0.3);
 }
 
 .hero--title {

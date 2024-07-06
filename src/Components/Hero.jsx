@@ -1,8 +1,23 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Hero.css";
 import headerlogo from "../images/hero-img.png";
 
 export default function Hero() {
+  useEffect(() => {
+    const handleScroll = () => {
+      const nav = document.querySelector("nav");
+      if (window.scrollY > 0) {
+        nav.classList.add("scrolled");
+      } else {
+        nav.classList.remove("scrolled");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
   return (
     <header className="hero-header">
       <div className="hero--container">
