@@ -1,5 +1,8 @@
 import React from "react";
 import "./Steps.css";
+import step1 from "../images/step1.png";
+import step2 from "../images/step2.png";
+import step3 from "../images/step3.png";
 
 export default function Steps() {
   return (
@@ -16,15 +19,7 @@ export default function Steps() {
             Nam itaque velit ipsum ad fugit!
           </p>
         </div>
-        {/* 'insert image instead of <p>' */}
-        <p className="img-placeholder">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-          deleniti nemo ex necessitatibus libero veniam quos, in, amet iure, hic
-          unde corrupti praesentium tempora autem corporis sed ab ea neque
-          voluptatibus id voluptatum molestias nesciunt. Cum natus consectetur
-          suscipit consequatur, architecto excepturi optio. Et delectus fugit
-          minus dignissimos placeat amet?
-        </p>
+        <img src={step1} alt="" />
       </div>
       <div className="steps-step--container">
         <div className="steps-step-information">
@@ -38,15 +33,7 @@ export default function Steps() {
             Nam itaque velit ipsum ad fugit!
           </p>
         </div>
-        {/* 'insert image instead of <p>' */}
-        <p className="img-placeholder">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-          deleniti nemo ex necessitatibus libero veniam quos, in, amet iure, hic
-          unde corrupti praesentium tempora autem corporis sed ab ea neque
-          voluptatibus id voluptatum molestias nesciunt. Cum natus consectetur
-          suscipit consequatur, architecto excepturi optio. Et delectus fugit
-          minus dignissimos placeat amet?
-        </p>
+        <img src={step2} alt="" />
       </div>
       <div className="steps-step--container">
         <div className="steps-step-information">
@@ -60,15 +47,7 @@ export default function Steps() {
             Nam itaque velit ipsum ad fugit!
           </p>
         </div>
-        {/* 'insert image instead of <p>' */}
-        <p className="img-placeholder">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
-          deleniti nemo ex necessitatibus libero veniam quos, in, amet iure, hic
-          unde corrupti praesentium tempora autem corporis sed ab ea neque
-          voluptatibus id voluptatum molestias nesciunt. Cum natus consectetur
-          suscipit consequatur, architecto excepturi optio. Et delectus fugit
-          minus dignissimos placeat amet?
-        </p>
+        <img src={step3} alt="" />
       </div>
     </div>
   );
