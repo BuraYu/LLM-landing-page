@@ -5,15 +5,12 @@ import { motion, AnimatePresence } from "framer-motion";
 
 const Carousel = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  // const [direction, setDirection] = useState(1);
 
   const nextBenefit = () => {
-    // setDirection(1);
     setCurrentIndex((prevIndex) => (prevIndex + 1) % benefits.length);
   };
 
   const prevBenefit = () => {
-    // setDirection(-1);
     setCurrentIndex(
       (prevIndex) => (prevIndex - 1 + benefits.length) % benefits.length
     );
@@ -31,7 +28,7 @@ const Carousel = () => {
 
   return (
     <div className="carousel">
-      <i className="arrow left" onClick={nextBenefit}></i>
+      <i className="arrow left" onClick={prevBenefit}></i>
 
       <motion.div
         className="carousel-content"
@@ -58,7 +55,7 @@ const Carousel = () => {
           ))}
         </div>
       </motion.div>
-      <i class="arrow right" onClick={nextBenefit}></i>
+      <i class="arrow right" onClick={prevBenefit}></i>
       <div className="carousel-dots">
         {benefits.map((_, index) => (
           <span
@@ -73,23 +70,3 @@ const Carousel = () => {
 };
 
 export default Carousel;
-
-// import React from "react";
-// import "./Benefits.css";
-
-// const Benefits = () => {
-//   return (
-//     <div className="benefits--container">
-//       <ul className="list">
-//         <li>1</li>
-//         <li>2</li>
-//         <li>3</li>
-//         <li>4</li>
-//         <li>5</li>
-//       </ul>
-//       <p>this is the corresponding text</p>
-//     </div>
-//   );
-// };
-
-// export default Benefits;
