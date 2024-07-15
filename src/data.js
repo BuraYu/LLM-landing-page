@@ -1,6 +1,6 @@
 const benefits = [
   {
-    heading: "Cost Efficiency",
+    heading: "Efficiency",
     details: [
       {
         subheading: "Long-term Savings",
@@ -15,7 +15,7 @@ const benefits = [
     ],
   },
   {
-    heading: "Control and Customization",
+    heading: "Control",
     details: [
       {
         subheading: "Full Control",
@@ -30,7 +30,7 @@ const benefits = [
     ],
   },
   {
-    heading: "Data Privacy and Security",
+    heading: "Security",
     details: [
       {
         subheading: "Enhanced Security",
@@ -45,7 +45,7 @@ const benefits = [
     ],
   },
   {
-    heading: "Performance and Availability",
+    heading: "Performance",
     details: [
       {
         subheading: "Dedicated Resources",
@@ -76,51 +76,6 @@ const benefits = [
         subheading: "Custom Infrastructure",
         description:
           "Optimize your infrastructure specifically for your use case, potentially improving efficiency and performance.",
-      },
-    ],
-  },
-  {
-    heading: "No Vendor Lock-in",
-    details: [
-      {
-        subheading: "Independence",
-        description:
-          "Freedom from being tied to a single vendor’s ecosystem, allowing you to switch technologies or providers without major disruptions.",
-      },
-      {
-        subheading: "Interoperability",
-        description:
-          "Easier integration with various internal systems and tools, without compatibility issues or restrictions imposed by external services.",
-      },
-    ],
-  },
-  {
-    heading: "Advanced Use Cases",
-    details: [
-      {
-        subheading: "Edge Deployments",
-        description:
-          "Ability to deploy models at the edge or in specific geographic locations, useful for applications requiring local processing.",
-      },
-      {
-        subheading: "Offline Access",
-        description:
-          "Capability to run models in environments with limited or no internet connectivity, ensuring continuous operation in remote or secure locations.",
-      },
-    ],
-  },
-  {
-    heading: "Learning and Innovation",
-    details: [
-      {
-        subheading: "In-house Expertise",
-        description:
-          "Building and maintaining your own LLM infrastructure can help develop in-house expertise and foster innovation within your organization.",
-      },
-      {
-        subheading: "Experimentation",
-        description:
-          "Greater freedom to experiment with different model architectures, training regimes, and optimizations without external constraints.",
       },
     ],
   },

@@ -31,9 +31,8 @@ const Carousel = () => {
 
   return (
     <div className="carousel">
-      <button className="carousel-button" onClick={prevBenefit}>
-        ←
-      </button>
+      <i className="arrow left" onClick={nextBenefit}></i>
+
       <motion.div
         className="carousel-content"
         key={currentIndex}
@@ -59,9 +58,7 @@ const Carousel = () => {
           ))}
         </div>
       </motion.div>
-      <button className="carousel-button" onClick={nextBenefit}>
-        →
-      </button>
+      <i class="arrow right" onClick={nextBenefit}></i>
       <div className="carousel-dots">
         {benefits.map((_, index) => (
           <span
@@ -76,3 +73,23 @@ const Carousel = () => {
 };
 
 export default Carousel;
+
+// import React from "react";
+// import "./Benefits.css";
+
+// const Benefits = () => {
+//   return (
+//     <div className="benefits--container">
+//       <ul className="list">
+//         <li>1</li>
+//         <li>2</li>
+//         <li>3</li>
+//         <li>4</li>
+//         <li>5</li>
+//       </ul>
+//       <p>this is the corresponding text</p>
+//     </div>
+//   );
+// };
+
+// export default Benefits;
