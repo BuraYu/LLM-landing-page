@@ -4,13 +4,11 @@
 
   justify-content: space-between;
   margin: 100px auto;
-  border: 2px solid #ccc;
   border-radius: 8px;
   padding: 100px;
 
   min-height: 500px;
   height: 350px;
-  background: linear-gradient(135deg, #ebd1b8, #ffffff);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: relative;
 }
@@ -23,7 +21,7 @@
 }
 
 .arrow:hover {
-  padding: 10px;
+  transform: scale(2);
 }
 
 .right {
