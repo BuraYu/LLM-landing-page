@@ -21,22 +21,7 @@ export default function Hero() {
   return (
     <header className="hero-header">
       <div className="hero--container">
-        <nav>
-          <ul>
-            <li>
-              <a href="#">How it works</a>
-            </li>
-            <li>
-              <a href="#">Benefits</a>
-            </li>
-            <li>
-              <a href="#">Pricing</a>
-            </li>
-            <li>
-              <a href="#">Logo</a>
-            </li>
-          </ul>
-        </nav>
+        
         <div className="hero--title">
           <h1>LLM Hosting</h1>
           <p>

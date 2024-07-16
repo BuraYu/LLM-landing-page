@@ -1,0 +1,38 @@
+.navbar--container {
+  position: relative;
+}
+
+ul {
+  display: flex;
+  list-style-type: none;
+  gap: 30px;
+  width: 100%;
+  position: fixed;
+  background-color: rgb(241, 241, 174);
+  padding-left: 120px;
+}
+
+ul li {
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: rgba(1, 10, 33, 0.6);
+  font-weight: 700;
+  font-family: "Inter", sans-serif;
+  font-size: 1em;
+}
+ul li a {
+  text-decoration: none;
+}
+
+ul li a:hover {
+  color: rgb(44, 44, 44);
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  background-color: rgba(197, 197, 197, 0);
+  border-bottom: 2px solid transparent;
+}
